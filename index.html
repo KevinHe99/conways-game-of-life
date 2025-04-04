@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conway's Game of Life</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<h1 class="text-xl">Conway's Game of Life</h1>
+<div id="grid-container"></div>
+<br>
+<div>
+  <button id="start-stop-btn" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full ">
+    Start</button>
+  <button id="clear-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+  Clear</button>
+  <button id="next-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+  Next Generation >></button>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

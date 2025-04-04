@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(30, 20px);
+  grid-gap: 1px;
+  margin: 1px auto;
+  justify-content: center;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.cell.alive {
+  background-color: black;
+}
