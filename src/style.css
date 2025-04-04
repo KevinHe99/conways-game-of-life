@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+* {
+  user-select: none; /* Disables text selection */
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For IE/Edge */
+}
+
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -7,15 +15,15 @@ body {
 
 #grid-container {
   display: grid;
-  grid-template-columns: repeat(30, 20px);
+  grid-template-columns: repeat(50, 10px);
   grid-gap: 1px;
   margin: 1px auto;
   justify-content: center;
 }
 
 .cell {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: white;
   border: 1px solid #ddd;
   cursor: pointer;
@@ -23,4 +31,8 @@ body {
 
 .cell.alive {
   background-color: black;
+}
+
+.btn-enable {
+
 }
