@@ -1,5 +1,5 @@
-const gridWidth = 50;
-const gridHeight = 50;
+const gridWidth = 60;
+const gridHeight = 60;
 let grid = [];
 let nextGrid = [];
 let intervalId = null;
